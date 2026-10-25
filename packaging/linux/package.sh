@@ -120,7 +120,6 @@ if has appimage; then
   esac
   APPDIR="$WORK/FilmCraft.AppDir"
   cp -R "$STAGE" "$APPDIR"
-  mv "$APPDIR/usr/share/doc" "$WORK/doc-unused"
   # Keep the sctk-adwaita MIT notice in the distributed AppImage.
   install -Dm644 "$ROOT/NOTICE" "$APPDIR/usr/share/doc/filmcraft/NOTICE"
   ln -s usr/bin/filmcraft "$APPDIR/AppRun"
